@@ -1,2 +1,14 @@
-.venv/
+# Python
 __pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Config & Secrets
+config.json
+data/config.json
+*.log
+
+# IDEs
+.vscode/
+.idea/

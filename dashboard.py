@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from poster_api import PosterAPI
-from weather_service import get_weather_history, get_weather_forecast
+from core.poster_api import PosterAPI
+from core.weather_service import get_weather_history, get_weather_forecast
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
 from collections import Counter
