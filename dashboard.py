@@ -216,7 +216,7 @@ if st.sidebar.button("🔄 Оновити всі дані"):
     st.cache_data.clear()
     st.rerun()
 
-with st.spinner("Jarvis аналізує ваші дані..."):
+with st.spinner("PCS аналізує ваші дані..."):
     df_sales, tids = load_sales_data(days_to_analyze)
     df_clients = load_loyalty_data()
     common_pairs, df_top_prods = load_product_and_basket_data(tids)
@@ -261,7 +261,7 @@ with t4:
 
 with t5:
     st.markdown("### 🪄 Розумний конструктор дегустацій")
-    st.write("Jarvis підібрав ідеальні пари: сири з великим залишком + популярні напої.")
+    st.write("PCS підібрав ідеальні пари: сири з великим залишком + популярні напої.")
     
     if smart_bundles:
         for bundle in smart_bundles:
