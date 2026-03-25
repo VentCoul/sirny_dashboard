@@ -1,27 +1,6 @@
 [theme]
-primaryColor = "#1f77b4"
-backgroundColor = "#ffffff"
-secondaryBackgroundColor = "#f0f2f6"
-textColor = "#31333F"
-font = "sans serif"
-
-[client]
-showErrorDetails = false
-toolbarMode = "minimal"
-
-[server]
-port = 8501
-headless = true
-runOnSave = false
-maxUploadSize = 200
-enableXsrfProtection = true
-enableCORS = false
-
-[browser]
-gatherUsageStats = false
-
-[logger]
-level = "info"
-
-[cache]
-maxMegabytes = 1024
+base = 'dark'
+primaryColor = '#d33682'
+backgroundColor = '#002b36'
+secondaryBackgroundColor = '#073642'
+textColor = '#839496'
