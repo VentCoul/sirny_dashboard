@@ -11,9 +11,9 @@ from itertools import combinations
 import random
 
 # Page config
-st.set_page_config(page_title="Sirny Analytics Pro", layout="wide")
+st.set_page_config(page_title="Poster Analytics Pro", layout="wide")
 
-st.title("🧀 Sirny Analytics Dashboard")
+st.title("📊 Poster Analytics Dashboard")
 st.markdown("---")
 
 # Initialize API
@@ -216,7 +216,7 @@ if st.sidebar.button("🔄 Оновити всі дані"):
     st.cache_data.clear()
     st.rerun()
 
-with st.spinner("Jarvis аналізує дані для Оксани..."):
+with st.spinner("Jarvis аналізує ваші дані..."):
     df_sales, tids = load_sales_data(days_to_analyze)
     df_clients = load_loyalty_data()
     common_pairs, df_top_prods = load_product_and_basket_data(tids)
@@ -281,4 +281,4 @@ with t5:
         st.dataframe(pd.DataFrame(common_pairs)[['Товар 1', 'Товар 2', 'Акційна ціна']], use_container_width=True, hide_index=True)
 
 st.sidebar.markdown("---")
-st.sidebar.info("🦾 Sirny AI: Smart Bundling v2")
+st.sidebar.info("🦾 Poster AI: Smart Bundling v2")
